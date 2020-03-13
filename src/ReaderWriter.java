@@ -3,9 +3,12 @@ import java.io.File;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ReaderWriter {
+public class ReaderWriter<E> {
     private File file;
     private ArrayList<String> lines;
+    private ArrayList<String> dinnerLines;
+    private ArrayList<String> conferenceLines;
+    private ArrayList<String> lodgeLines;
 
     /**
      * Default constructor.
@@ -25,12 +28,34 @@ public class ReaderWriter {
         this.lines = new ArrayList<>();
     }
 
+    /**
+     * Reads current file and adds all lines to an ArrayList.
+     */
     public void addLines(){
         try {
             Scanner fileScanner = new Scanner(file);
+            while (fileScanner.hasNextLine()){
+                lines.add(fileScanner.nextLine());
+            }
 
         } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
+        }
+    }
+
+    /**
+     * Goes through ArrayList and sorts lines into the correct array list
+     */
+    public void sortLines(){
+        for (int i = 0; i < lines.size(); i++){
+            String temp = lines.get(i).toLowerCase();
+            if(temp.contains("dinner")){
+                dinnerLines.add(lines.get(i));
+            } else if (temp.contains("conference")){
+                conferenceLines.add(lines.get(i));
+            } else if (temp.contains("lodging")) {
+                lodgeLines.add(lines.get(i));
+            }
         }
     }
 
