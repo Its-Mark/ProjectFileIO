@@ -17,6 +17,9 @@ public class ReaderWriter<E> {
     public ReaderWriter(){
         this.file = null;
         this.lines = new ArrayList<>();
+        this.dinnerLines = new ArrayList<>();
+        this.conferenceLines = new ArrayList<>();
+        this.lodgeLines = new ArrayList<>();
     }
 
     /**
@@ -26,6 +29,9 @@ public class ReaderWriter<E> {
     public ReaderWriter(String f){
         this.file = new File(f);
         this.lines = new ArrayList<>();
+        this.dinnerLines = new ArrayList<>();
+        this.conferenceLines = new ArrayList<>();
+        this.lodgeLines = new ArrayList<>();
     }
 
     /**
@@ -57,6 +63,10 @@ public class ReaderWriter<E> {
                 lodgeLines.add(lines.get(i));
             }
         }
+    }
+
+    public void writeToFile(File f, String service){
+
     }
 
     /**

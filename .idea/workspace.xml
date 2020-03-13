@@ -4,7 +4,6 @@
     <list default="true" id="724d6e59-338e-451f-8228-5565b6f2daa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReaderWriterTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriterTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583853141087</updated>
       <workItem from="1583853145251" duration="1980000" />
-      <workItem from="1584131021477" duration="3258000" />
+      <workItem from="1584131021477" duration="4100000" />
     </task>
     <servers />
   </component>
