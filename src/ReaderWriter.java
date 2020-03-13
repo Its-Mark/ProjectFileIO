@@ -29,7 +29,7 @@ public class ReaderWriter<E> {
     }
 
     /**
-     * Reads current file and adds all lines to an ArrayList.
+     * Reads current file and adds all lines to an ArrayList (lines) .
      */
     public void addLines(){
         try {
@@ -44,7 +44,7 @@ public class ReaderWriter<E> {
     }
 
     /**
-     * Goes through ArrayList and sorts lines into the correct array list
+     * Goes through lines and sorts lines into the correct array list
      */
     public void sortLines(){
         for (int i = 0; i < lines.size(); i++){
