@@ -1,5 +1,4 @@
-import java.io.FileNotFoundException;
-import java.io.File;
+import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -65,8 +64,38 @@ public class ReaderWriter<E> {
         }
     }
 
-    public void writeToFile(File f, String service){
-
+    /**
+     * Creates new file based on the service
+     * Writes the data from correct ArrayList into that new file.
+     * @param service = type of service to create the file
+     */
+    public void writeToFile(String service){
+        if(service.toLowerCase() == "dinner" || service.toLowerCase() == "conference" || service.toLowerCase() == "lodging") {
+            File fileToWrite = new File("C:\\Users\\milk8\\Desktop\\CECS 277\\Projects\\ProjectFileIO" + service);
+            try {
+                FileWriter fw = new FileWriter(fileToWrite);
+                BufferedWriter bw = new BufferedWriter(fw);
+                if (service.compareToIgnoreCase("dinner") == 0) {
+                    for (int i = 0; i < dinnerLines.size(); i++) {
+                        bw.write(dinnerLines.get(i));
+                    }
+                } else if (service.compareToIgnoreCase("lodging") == 0) {
+                    for (int i = 0; i < lodgeLines.size(); i++) {
+                        bw.write(lodgeLines.get(i));
+                    }
+                } else if (service.compareToIgnoreCase("conference") == 0) {
+                    for (int i = 0; i < conferenceLines.size(); i++) {
+                        bw.write(conferenceLines.get(i));
+                    }
+                }
+            } catch (FileNotFoundException fnfe) {
+                fnfe.printStackTrace();
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
+            }
+        } else {
+            System.out.println("Invalid service");
+        }
     }
 
     /**

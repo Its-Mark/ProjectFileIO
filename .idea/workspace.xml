@@ -4,6 +4,7 @@
     <list default="true" id="724d6e59-338e-451f-8228-5565b6f2daa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReaderWriterTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriterTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
