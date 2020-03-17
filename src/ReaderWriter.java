@@ -126,8 +126,9 @@ public class ReaderWriter {
                     bw.write(conferenceLines.get(i) + "\n");
                 }
             }
-            bw.close();
-            fw.close();
+            bw.close(); //DONT FORGET THIS EVER AGAIN
+            fw.close(); //DONT FORGET THIS EVER AGAIN
+            //THESE TWO LINES ALMOST MADE ME WRITE 3 METHODS INSTEAD OF ONE TO WRITE THESE LINES INTO THE CORRECT FILE
         } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
         } catch (IOException ioe) {
