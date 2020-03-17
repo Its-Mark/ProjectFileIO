@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724d6e59-338e-451f-8228-5565b6f2daa2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ReaderWriterTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriterTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
       <workItem from="1584131021477" duration="4100000" />
       <workItem from="1584412552273" duration="2972000" />
       <workItem from="1584415568833" duration="2198000" />
+      <workItem from="1584418006071" duration="302000" />
     </task>
     <servers />
   </component>
