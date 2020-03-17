@@ -36,7 +36,9 @@ public class ReaderWriterTester {
             File cF = new File("Conference.txt");
             File dF = new File("Dinner.txt");
             File lF = new File("Lodging.txt");
-            rw.writeLodgingFile(lF);
+            rw.writeToFile(lF,"lodging");
+            rw.writeToFile(dF, "dinner");
+            rw.writeToFile(cF, "conference");
         } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
         } catch (IOException ioe) {

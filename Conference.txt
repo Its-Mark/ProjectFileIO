@@ -1,0 +1,11 @@
+Eve Goodwin;Conference;139.95;10/30/2020
+Maliyah Fitzpatrick;Conference;370.62;4/20/2020
+Carolina Holder;Conference;117.36;9/19/2020
+Saige Golden;Conference;432.18;5/15/2020
+Helen Lin;Conference;134.45;9/19/2020
+Kaylyn Hall;Conference;400.76;9/19/2020
+Landyn Garrison;Conference;374.40;10/11/2020
+Harley Branch;Conference;494.17;10/30/2020
+Emilia Wyatt;Conference;0.38;5/15/2020
+Zoe Mack;Conference;237.33;11/11/2020
+Dominick Archer;Conference;113.21;9/19/2020

@@ -104,45 +104,27 @@ public class ReaderWriter {
         }
     }
 
-
-    public void writeLodgingFile(File f){
+    /**
+     * Creates new file based on the service
+     * Writes the data from correct ArrayList into that new file.
+     * @param service = type of service to create the file
+     */
+    public void writeToFile(File f, String service){
         try {
             FileWriter fw = new FileWriter(f);
             BufferedWriter bw = new BufferedWriter(fw);
-            for(int i = 0; i < lodgeLines.size(); i++){
-                bw.write(lodgeLines.get(i) + "\n");
-            }
-            bw.close();
-            fw.close();
-        } catch (FileNotFoundException fnfe) {
-            fnfe.printStackTrace();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
-    }
-
-    public void writeConferenceFile(File f){
-        try {
-            FileWriter fw = new FileWriter(f);
-            BufferedWriter bw = new BufferedWriter(fw);
-            for(int i = 0; i < conferenceLines.size(); i++){
-                bw.write(conferenceLines.get(i) + "\n");
-            }
-            bw.close();
-            fw.close();
-        } catch (FileNotFoundException fnfe) {
-            fnfe.printStackTrace();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
-    }
-
-    public void writeDinnerFile(File f){
-        try {
-            FileWriter fw = new FileWriter(f);
-            BufferedWriter bw = new BufferedWriter(fw);
-            for(int i = 0; i < dinnerLines.size(); i++){
-                bw.write(dinnerLines.get(i) + "\n");
+            if (service.compareToIgnoreCase("dinner") == 0) {
+                for (int i = 0; i < dinnerLines.size(); i++) {
+                    bw.write(dinnerLines.get(i) + "\n");
+                }
+            } else if (service.compareToIgnoreCase("lodging") == 0) {
+                for (int i = 0; i < lodgeLines.size(); i++) {
+                    bw.write(lodgeLines.get(i) + "\n");
+                }
+            } else if (service.compareToIgnoreCase("conference") == 0) {
+                for (int i = 0; i < conferenceLines.size(); i++) {
+                    bw.write(conferenceLines.get(i) + "\n");
+                }
             }
             bw.close();
             fw.close();
