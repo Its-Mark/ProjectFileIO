@@ -1,8 +1,16 @@
+/**
+ * Project File IO
+ * @author Mark Garcia 018019103
+ *         mark.garcia01@student.csulb.edu
+ * @author Brandon Wiitanen
+ *         brandon.wiitanen@student.csulb.edu
+ */
+
 import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ReaderWriter<E> {
+public class ReaderWriter {
     private File file;
     private ArrayList<String> lines;
     private ArrayList<String> dinnerLines;
@@ -49,6 +57,38 @@ public class ReaderWriter<E> {
     }
 
     /**
+     * Return lines ArrayList
+     * @return this.lines
+     */
+    public ArrayList<String> getLines(){
+        return this.lines;
+    }
+
+    /**
+     * Return dinnerLines ArrayList
+     * @return this.dinnerLines
+     */
+    public ArrayList<String> getDinnerLines(){
+        return this.dinnerLines;
+    }
+
+    /**
+     * Return conferenceLines ArrayList
+     * @return this.conferenceLines
+     */
+    public ArrayList<String> getConferenceLines(){
+        return this.conferenceLines;
+    }
+
+    /**
+     * Return lodgeLines ArrayList
+     * @return this.lodgeLines
+     */
+    public ArrayList<String> getLodgeLines(){
+        return this.lodgeLines;
+    }
+
+    /**
      * Goes through lines and sorts lines into the correct array list
      */
     public void sortLines(){
@@ -64,37 +104,52 @@ public class ReaderWriter<E> {
         }
     }
 
-    /**
-     * Creates new file based on the service
-     * Writes the data from correct ArrayList into that new file.
-     * @param service = type of service to create the file
-     */
-    public void writeToFile(String service){
-        if(service.toLowerCase() == "dinner" || service.toLowerCase() == "conference" || service.toLowerCase() == "lodging") {
-            File fileToWrite = new File("C:\\Users\\milk8\\Desktop\\CECS 277\\Projects\\ProjectFileIO" + service);
-            try {
-                FileWriter fw = new FileWriter(fileToWrite);
-                BufferedWriter bw = new BufferedWriter(fw);
-                if (service.compareToIgnoreCase("dinner") == 0) {
-                    for (int i = 0; i < dinnerLines.size(); i++) {
-                        bw.write(dinnerLines.get(i));
-                    }
-                } else if (service.compareToIgnoreCase("lodging") == 0) {
-                    for (int i = 0; i < lodgeLines.size(); i++) {
-                        bw.write(lodgeLines.get(i));
-                    }
-                } else if (service.compareToIgnoreCase("conference") == 0) {
-                    for (int i = 0; i < conferenceLines.size(); i++) {
-                        bw.write(conferenceLines.get(i));
-                    }
-                }
-            } catch (FileNotFoundException fnfe) {
-                fnfe.printStackTrace();
-            } catch (IOException ioe) {
-                ioe.printStackTrace();
+
+    public void writeLodgingFile(File f){
+        try {
+            FileWriter fw = new FileWriter(f);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for(int i = 0; i < lodgeLines.size(); i++){
+                bw.write(lodgeLines.get(i) + "\n");
             }
-        } else {
-            System.out.println("Invalid service");
+            bw.close();
+            fw.close();
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+
+    public void writeConferenceFile(File f){
+        try {
+            FileWriter fw = new FileWriter(f);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for(int i = 0; i < conferenceLines.size(); i++){
+                bw.write(conferenceLines.get(i) + "\n");
+            }
+            bw.close();
+            fw.close();
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+
+    public void writeDinnerFile(File f){
+        try {
+            FileWriter fw = new FileWriter(f);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for(int i = 0; i < dinnerLines.size(); i++){
+                bw.write(dinnerLines.get(i) + "\n");
+            }
+            bw.close();
+            fw.close();
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
         }
     }
 
