@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724d6e59-338e-451f-8228-5565b6f2daa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Conference.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dinner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lodging.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sales.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectFileIO/ReaderWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectFileIO/ReaderWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectFileIO/ReaderWriterTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectFileIO/ReaderWriterTester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReaderWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReaderWriterTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderWriterTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +62,7 @@
       <workItem from="1583853145251" duration="1980000" />
       <workItem from="1584131021477" duration="4100000" />
       <workItem from="1584412552273" duration="2972000" />
-      <workItem from="1584415568833" duration="1677000" />
+      <workItem from="1584415568833" duration="2198000" />
     </task>
     <servers />
   </component>
