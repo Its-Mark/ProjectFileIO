@@ -13,11 +13,12 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 /**
- * This tester creates 40 entries into the sales.txt file, sorts the entries, then writes the entries
- * into the appropriate file (Lodging.txt, Dinner.txt, Conference.txt).
+ * This tester randomly creates 40 new entries into the sales.txt file every time the program is ran.
+ * It then sorts the entries, then writes the entries into the appropriate file (Lodging.txt, Dinner.txt, Conference.txt).
  * Amount of entries can be altered by adding more names into the names Array.
  * Variety of Dates can also be altered by adding more dates into the dates Array.
  */
+
 public class ReaderWriterTester {
     public static void main(String[] args){
         //random names
